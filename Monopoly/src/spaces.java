@@ -1,4 +1,3 @@
-
 abstract class spaces
 	{
 protected String name;
