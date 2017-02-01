@@ -6,6 +6,7 @@ public class MonopolyRunner
 		public static void main(String[] args)
 			{
 				ArrayList <spaces> board = new ArrayList <spaces>();
+				board.add(new spaces(1, 100, "Mediteranean Avenue"));
 				
 				begining();				
 			}
@@ -38,6 +39,7 @@ public class MonopolyRunner
 		public static void playerOneTurn()
 		{
 			int playerSpace = 0;
+			int playerMoney = 0;
 			for(int i =0;i<100; i++)
 			{
 			
@@ -48,7 +50,7 @@ public class MonopolyRunner
 				{
 				//diceRoll();
 					playerSpace = playerSpace+diceRoll();
-					System.out.println("you are now at "+playerSpace);
+					System.out.println("you are now at position "+playerSpace);
 				}
 			}
 		}
