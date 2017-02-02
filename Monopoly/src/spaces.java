@@ -1,4 +1,4 @@
-abstract class spaces
+public class spaces
 	{
 		private int price;
 		private String name;
