@@ -3,12 +3,22 @@ public class spaces
 		private int price;
 		private String name;
 		private int location;
-		public spaces(int p, String n, int l)
+		private String color;
+		public spaces(int p, String n, int l, String c)
 			{
 			price = p;
 			name = n;
 			location = l;
+			color = c;
 			}	
+		public String getColor()
+			{
+				return color;
+			}
+		public void setColor(String color)
+			{
+				this.color = color;
+			}
 		//price
 		public int getPrice()
 			{

@@ -9,9 +9,49 @@ public class MonopolyRunner
 
 		public static <Int> void main(String[] args)
 		{
-				board.add(new spaces(1, "Mediteranean Avenue", 100));
-				
+			//	board.add(new spaces(1, "Mediteranean Avenue", 100));
+//			board.add(new spaces(100, "Go", 0, "Colorless"));
+			board.add(new spaces(100, "Mediteranean Avenue", 1, "Dark Purple"));
+		//	board.add(new spaces(100, "Community Chest", 2, "Colorless" ));
+			board.add(new spaces(100, "Baltic Avenue",3, "Dark Purple" ));
+		//	board.add(new spaces(100, "Income TAX", 4, "Colorless" ));
+			board.add(new spaces(100, "Reading Railroad", 23, "Station" ));
+			board.add(new spaces(100, "Oriental Avenue",3 , "Light Blue" ));
+		//	board.add(new spaces(100, "CHANCE", 7 , "Colorless"));
+			board.add(new spaces(100, "Vermont Avenue", 4, "Light Blue"));
+			board.add(new spaces(100, "Conneticut Avenue", 5, "Light Blue" ));
+		//	board.add(new spaces(100, "JAIL", , ));
+			board.add(new spaces(100, "St. Charles Place",6, "Pink" ));
+		//	board.add(new spaces(100, "Electric Company", 27, "Utility" ));
+			board.add(new spaces(100, "States Avenue", 7, "Pink" ));
+			board.add(new spaces(100, "Virginia Avenue", 8, "Pink"));
+			board.add(new spaces(100, "Pennsylvania Railroad", 24, "Station" ));
+			board.add(new spaces(100, "St. James Place", 9, "Orange" ));
+		//	board.add(new spaces(100, "COMMUNITY CHEST", 12 , "Colorless" ));
+			board.add(new spaces(100, "Tennessee Avenue", 10, "Orange" ));
+			board.add(new spaces(100, "New York Avenue", 11, "Orange" ));
+		//	board.add(new spaces(100, "FREE PARKING", 13 , "Colorless" ));
+			board.add(new spaces(100, "Kentucky Avenue", 12, "Red" ));
+		//	board.add(new spaces(100, "CHANCE", 1 , "Colorless"));
+			board.add(new spaces(100, "Indiana Avenue", 13, "Red" ));
+			board.add(new spaces(100, "Illinois Avenue", 14, "Red" ));
+			board.add(new spaces(100, "B. & O. Railroad", 25, "Station" ));
+			board.add(new spaces(100, "Atlantic Avenue", 15, "Yellow" ));
+			board.add(new spaces(100, "Ventor Avenue", 16, "Yellow" ));
+			board.add(new spaces(100, "Water Works", 28, "Utility" ));
+			board.add(new spaces(100, "Marvin Gardens", 17, "Yellow"));
+		//	board.add(new spaces(100, "JAIL", 1 , "Colorless"));
+			board.add(new spaces(100, "Pacific Avenue", 18, "Green" ));
+			board.add(new spaces(100, "North Carolina Avenue", 19, "Green" ));
+		//	board.add(new spaces(100, "COMMUNITY CHEST", 1, "Colorless"));
+			board.add(new spaces(100, "Pennsylvania Avenue", 20, "Green" ));
+			board.add(new spaces(100, "Short Line", 26, "Station" ));
+		//	board.add(new spaces(100, "CHANCE", 2 , "Colorless"));
+			board.add(new spaces(100, "Park Place", 21, "Dark Blue" ));
+			board.add(new spaces(100, "LUXURY TAX", 2 , "Colorless" ));
+			board.add(new spaces(100, "Boardwalk", 22, "Dark Blue" ));
 				//++add more spaces(one for each space on the board)
+			// ++ fix values
 			begining();			
 				
 			}
