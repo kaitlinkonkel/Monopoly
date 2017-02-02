@@ -9,7 +9,7 @@ public class MonopolyRunner
 
 		public static <Int> void main(String[] args)
 		{
-			//	board.add(new spaces(1, "Mediteranean Avenue", 100));
+		//	board.add(new spaces(1, "Mediteranean Avenue", 100));
 //			board.add(new spaces(100, "Go", 0, "Colorless"));
 			board.add(new spaces(100, "Mediteranean Avenue", 1, "Dark Purple"));
 		//	board.add(new spaces(100, "Community Chest", 2, "Colorless" ));
@@ -50,7 +50,7 @@ public class MonopolyRunner
 			board.add(new spaces(100, "Park Place", 21, "Dark Blue" ));
 			board.add(new spaces(100, "LUXURY TAX", 2 , "Colorless" ));
 			board.add(new spaces(100, "Boardwalk", 22, "Dark Blue" ));
-				//++add more spaces(one for each space on the board)
+			
 			// ++ fix values
 			begining();			
 				
@@ -102,8 +102,7 @@ public class MonopolyRunner
 					String yesOrNo = userInput4.nextLine();
 					
 					if(yesOrNo.equals("yes"))
-						{
-							
+						{							
 							playerMoney = playerMoney - board.get(playerSpace).getPrice();//takes the price from playerMoney
 							System.out.println("Alright you now have "+playerMoney+" dollars");
 							//++add this space to spaces the player has bought
@@ -115,9 +114,11 @@ public class MonopolyRunner
 					
 					System.out.println("all the properties you own are:"	);
 					//++go through an array list with all of the properties you own 
+					//get the array list working 
 				}
 			}
 		}
+		
 //		public static void aiTurn()
 //		{
 //				System.out.println("It is the ");
