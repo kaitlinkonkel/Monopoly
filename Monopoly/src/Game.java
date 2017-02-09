@@ -77,17 +77,17 @@ public static void createBoard() throws FileNotFoundException
     	//price
     	String price0 = output[0];
     	int price = Integer.parseInt(price0);
-    	System.out.println("price:"+ price);
+//    	System.out.println("price:"+ price);
     	//name
     	String name = output[1];
-    	System.out.println("name:"+ name);
+//    	System.out.println("name:"+ name);
     	//location
     	String location0 = output[2];
     	int location = Integer.parseInt(location0);
-    	System.out.println("location:"+ location);
+//    	System.out.println("location:"+ location);
     	//color
     	String color = output[3];
-    	System.out.println("color:"+ color);
+//    	System.out.println("color:"+ color);
 
        board.add(new spaces(price, name, location, color));
        
