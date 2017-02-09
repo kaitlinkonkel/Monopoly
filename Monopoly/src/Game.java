@@ -59,7 +59,7 @@ public static void createBoard() throws FileNotFoundException
 	String whichKind = userInput4.next();
 	if(whichKind.equals("colorado"))
 		{
-		file = new Scanner( new File( "OriginalMonopoly" ) );
+		file = new Scanner( new File( "ColoradoMonopoly" ) );
 		}
 	else{
 		file = new Scanner( new File( "OriginalMonopoly" ) );
