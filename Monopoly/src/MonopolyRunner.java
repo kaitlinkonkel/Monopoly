@@ -14,7 +14,7 @@ public class MonopolyRunner
 			begining();			
 				
 			}
-
+		static int playerMoney = 1500;
 		public static void begining()
 		{
 				Scanner userInput = new Scanner(System.in);
@@ -28,13 +28,55 @@ public class MonopolyRunner
 					playerOneTurn();
 					}
 		}
+		public static void jailDice()
+		{
+			int jailDiceRoll1=(int)(Math.random()*6);
+			int jailDiceRoll2=(int)(Math.random()*6);
+			
+			if(jailDiceRoll1 == jailDiceRoll2)
+			{
+			System.out.println("You are out of jail.");
+			}
+			 if(jailDiceRoll1 != jailDiceRoll2)
+			 {
+		    System.out.println("You did not roll doubles, you owe the bank $50.");
+			System.out.println("Would you like to roll again for $50. If you roll doubles, you will lose no money...");
+			System.out.println("But if you don't, you owe us 100$ type 1 for roll and 2 for pay $50");
+			Scanner userInput6 = new Scanner(System.in);
+			if(userInput6.equals(2))
+			{
+				playerMoney = playerMoney-50;
+			}
+			 if(userInput6.equals(1))
+			{
+				 int jailDiceRoll3=(int)(Math.random()*6);
+				 int jailDiceRoll4=(int)(Math.random()*6);
+				 
+				 
+				 if(jailDiceRoll3 == jailDiceRoll4)
+				 {
+					 System.out.println("You rolled doubles, you will lose no money");
+					
+				 }
+				 if(jailDiceRoll3 != jailDiceRoll4)
+				 {
+					 System.out.println("You did not roll doubles, you will now be docked $100.");
+					 playerMoney = playerMoney-100;
+				 }
 		
+			}
+			 }
+			}
 		
 		public static int diceRoll()
 		{
 				int diceRoll1=(int)(Math.random()*6);
 				int diceRoll2=(int)(Math.random()*6);
 				int diceRollSum = diceRoll1+diceRoll2;
+				if (diceRoll2==diceRoll1)
+				{
+					jailDice();
+				}
 				System.out.println("You rolled a "+diceRoll1+" and a "+diceRoll2+" for a sum of "+diceRollSum);
 				return diceRollSum;
 		}
@@ -46,7 +88,7 @@ public class MonopolyRunner
 			 ArrayList<String> playerProperties = new ArrayList<String>();
 		       
 			int playerSpace = 0;
-			int playerMoney = 1500;
+			
 			for(int i =0;i<1000; i++)
 			{
 				

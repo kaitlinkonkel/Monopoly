@@ -8,7 +8,7 @@ public class Game
 	public static ArrayList <spaces> board = new ArrayList <spaces>();
 
 
- int e = 0;
+
 public static void createBoard() throws FileNotFoundException
 {
 	
