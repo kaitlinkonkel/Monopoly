@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.omg.Messaging.SyncScopeHelper;
-
+//hello
 public class MonopolyRunner
 	{
 		//public static ArrayList <spaces> board = new ArrayList <spaces>();
@@ -18,7 +18,7 @@ public class MonopolyRunner
 		public static void begining()
 		{
 				Scanner userInput = new Scanner(System.in);
-				System.out.println("Hello welcome to monoply. What is your name?");
+				System.out.println("Welcome to monoply. What is your name?");
 				String playerName = userInput.nextLine();
 				System.out.println("Ok "+playerName+". Would you like to start?");
 				Scanner userInput3 = new Scanner(System.in);

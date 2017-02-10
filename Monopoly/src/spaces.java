@@ -1,5 +1,6 @@
 public class spaces
 	{
+	//hello
 		private int price;
 		private String name;
 		private int location;
